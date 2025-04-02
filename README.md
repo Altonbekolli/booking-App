@@ -116,7 +116,7 @@ Kontakt: [Altonbekolli\_1@web.de](mailto\:Altonbekolli_1@web.de)
 
 ## ⚡ TODOs & Erweiterungsideen
 
-- 💡 Erweiterungsideen
+→ 💡 Erweiterungsideen
 📧 Buchungsbestätigung per E-Mail
 
 → Automatisch eine Mail rausschicken mit Ticketdetails
