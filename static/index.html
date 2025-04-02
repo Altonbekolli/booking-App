@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Conference Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--  Navigation -->
+    <header>
+        <div class="logo">Go Conference</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#booking">Tickets</a></li>
+                <li><a href="#testimonials">Bewertungen</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--  Content -->
+    <div class="content">
+
+        <!--   Hero-Bereich -->
+        <div id="home" class="hero fade-in">
+            <h1>Erlebe die Zukunft der Konferenzen</h1>
+            <p>Buche jetzt dein Ticket für das größte Go-Developer-Event des Jahres.</p>
+            <a href="#bookingForm" class="cta-button">Jetzt buchen</a>
+        </div>
+
+        <!--  Buchungssystem -->
+        <div class="booking">
+            <h2>Verfügbare Konferenzen</h2>
+            <div id="meetingsContainer"></div>
+
+            <h2>Jetzt dein Ticket sichern</h2>
+            <form id="bookingForm">
+                <label for="meetingSelect">Wähle eine Konferenz:</label>
+                <select id="meetingSelect" required></select>
+
+                <input type="text" id="firstName" placeholder="Vorname" required>
+                <input type="text" id="lastName" placeholder="Nachname" required>
+                <input type="email" id="email" placeholder="E-Mail-Adresse" required>
+                <input type="number" id="tickets" placeholder="Anzahl der Tickets" required min="1">
+
+                <button type="submit">Ticket buchen</button>
+            </form>
+            <p id="responseMessage"></p>
+        </div>
+        <!--   Features -->
+        <div id="features" class="features fade-in">
+            <div class="feature-container">
+                <div class="feature-box">
+                    <img src="images/buchen.png" alt="24/7 Buchung">
+                    <h3>24/7 Online-Terminbuchungen</h3>
+                    <p>Erhalten Sie rund um die Uhr Buchungen</p>
+                </div>
+                <div class="feature-box">
+                    <img src="images/teilnehmer.png" alt="Teilnehmerverwaltung">
+                    <h3>Effiziente Teilnehmerverwaltung</h3>
+                    <p>Schnelle und einfache Verwaltung Ihrer Kursteilnehmer.</p>
+                </div>
+                <div class="feature-box">
+                    <img src="images/kalender.png" alt="Kalender">
+                    <h3>Übersichtliche Kalenderansicht</h3>
+                    <p>Sie haben stets den Überblick über Ihre Veranstaltungen.</p>
+                </div>
+                <div class="feature-box">
+                    <img src="images/benachrichtigung.png" alt="Benachrichtigungen">
+                    <h3>Automatische Benachrichtigungen</h3>
+                    <p>Erinnern Sie die Teilnehmer automatisch an den gebuchten Kurs.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--   Kundenbewertungen -->
+        <div id="testimonials" class="testimonials fade-in">
+            <h2>Was unsere Besucher sagen</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>"Ein unvergessliches Event! Die Vorträge waren erstklassig. Das Ticket-System hat uns enorme Arbeit gespart!"</p>
+                    <span>- Max Mustermann</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Kurz, schnell und klar. Top Buchungssystem. Danke meinerseits."</p>
+                    <span>- Lisa Schmidt</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="contact">
+        <p>Kontakt: Altonbekolli_1@web.de | Tel: +49 17645994247</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
